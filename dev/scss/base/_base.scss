@@ -1,0 +1,42 @@
+/* =============
+    Base
+============= */
+
+ul{
+    padding: 0;
+    
+    li{
+       list-style: none; 
+    }
+}
+
+.show-for-md{
+    display: none;
+
+
+    @include md{
+        display: block;
+    }
+    
+}
+
+.show-for-lg{
+    display: none;
+
+
+    @include lg{
+        display: block;
+    }
+    
+}
+
+.content-spacing{
+    margin-top: 40px;
+
+    @include md{
+        margin-top: 50px;
+    }
+    @include lg{
+        margin-top: 60px;
+    }
+}
